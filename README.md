@@ -16,7 +16,7 @@ We assume page A has pages T1, ..., Tn which point to it (i.e., are citations). 
 damping factor which can be set between 0 and 1. We usually set d to 0.85. Also C(A) is defined as
 the number of links going out of page A. The PageRank of a page A is given as follows:
 
-`PR(A) = (1 - d) / N + d * ( PR(T1) / C(T1) + ... + PR(Tn) / C(Tn) ), where N is the total number of pages.`
+*PR(A) = (1 - d) / N + d * ( PR(T1) / C(T1) + ... + PR(Tn) / C(Tn) ), where N is the total number of pages.*
 
 Note that the PageRanks form a probability distribution over web pages, so the sum of all web pages'
 PageRanks will be one.
@@ -29,7 +29,7 @@ PageRanks will be one.
 rank for all 500 pages, stopping when the cumulative diff for all 500 goes below that number (a real
 number greater than zero) - note, be careful when debugging - for some settings of these two parameters
 your program could loop forever.
-Your output should be a le with a list of the pages in page rank order (highest to lowest), for each page
+Your output should be a file with a list of the pages in page rank order (highest to lowest), for each page
 listing its outbranching (how many pages it connects to) and the page rank for that page (to 8 signicant
 digits).
 
